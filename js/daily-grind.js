@@ -147,6 +147,7 @@ break;
 }
 console.log(coffee);
 document.getElementById("coffee-output").innerHTML = coffeeTemplate(coffee);
-document.getElementsByTagName("HTML")[0]
-document.getElementById("coffee-hightlight").style.color = coffee.color;
+document.getElementsByClassName("feature")[0].style.color = coffee.color;
+document.getElementsByClassName("feature")[1].style.color = coffee.color;
+document.styleSheets[1].cssRules[0].style.setProperty("background-color", coffee.color);
 //alert(today); 
