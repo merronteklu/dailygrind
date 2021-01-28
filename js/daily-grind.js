@@ -24,10 +24,10 @@ function coffeeTemplate(coffee){
     let myReturn = ""; 
 
     myReturn += `
-
     <p>
-
-    </p> `;
+    <img src="${coffee.pic}" alt="${coffee.alt}" id="coffee"/>
+    <strong class="feature">${coffee.day}'s Coffee Special:</strong><br> ${coffee.day}'s daily coffee special is <strong class="feature">${coffee.name}</strong>${coffee.desc}
+</p> `;
     
     return myReturn;
 
