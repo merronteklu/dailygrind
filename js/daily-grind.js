@@ -31,6 +31,8 @@ else {
     myDay = myDate.getDay();
 }
 
+myDay = parseInt(myDay);
+
 function coffeeTemplate(coffee){
     let myReturn = ""; 
 
