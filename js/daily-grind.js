@@ -20,6 +20,17 @@ let myDay = myDate.getDay();
 let today = ""; 
 let coffee = "";
 
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+
+
+if(urlParams.has('day')) {
+    myDay = urlParams.get('day');
+}
+else {
+    myDay = myDate.getDay();
+}
+
 function coffeeTemplate(coffee){
     let myReturn = ""; 
 
